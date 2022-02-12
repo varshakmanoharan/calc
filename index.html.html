@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            width: 80px;
+            height: 55px;
+            background-color: #374157;
+            color: black;
+            border: none;
+            font-size: 25px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <center>
+        <div>
+            <h1> Calculator</h1>
+        </div>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="result"
+                        style="width: 238px; height: 50px; border-color:#dadce0;"></td>
+                <td><input type="button" value="c" class="btn" onclick="clearBox()" id="clear" style="background-color: rgb(182, 22, 22)"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="btn" onclick="displayNum(`1`)" id="one"> </td>
+                <td><input type="button" value="2" class="btn" onclick="displayNum(`2`)" id="two"> </td>
+                <td><input type="button" value="3" class="btn" onclick="displayNum(`3`)" id="three"> </td>
+                <td><input type="button" value="/" class="btn"onclick="displayNum(`/`)" id="" style="background-color: rgb(173, 171, 166);"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="btn" onclick="displayNum(`4`)" id="four"> </td>
+                <td><input type="button" value="5" class="btn" onclick="displayNum(`5`)" id="five"> </td>
+                <td><input type="button" value="6" class="btn" onclick="displayNum(`6`)" id="six"> </td>
+                <td><input type="button" value="-" class="btn" onclick="displayNum('-')" style="background-color: rgb(173, 171, 166);"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" class="btn" onclick="displayNum(`7`)" > </td>
+                <td><input type="button" value="8" class="btn" onclick="displayNum(`8`)" id=""> </td>
+                <td><input type="button" value="9" class="btn" onclick="displayNum(`9`)" id=""> </td>
+                <td><input type="button" value="+" class="btn" onclick="displayNum(`+`)" style="background-color: rgb(173, 171, 166);"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." class="btn" onclick="displayNum(`.`)" style="background-color: rgb(173, 171, 166);"> </td>
+                <td><input type="button" value="0" class="btn" onclick="displayNum(`0`)" id="" style="background-color: rgb(173, 171, 166);"> </td>
+                <td><input type="button" value="=" class="btn" onclick="evaluateExpression()"style="background-color: rgb(173, 171, 166);"> </td>
+                <td><input type="button" value="*" class="btn" onclick="displayNum(`*`)" style="background-color: rgb(173, 171, 166);"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="del" class="btn" onclick="backSpace()" style="background-color: rgb(173, 171, 166);"> </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+<script src="./script.js" defer></script>
+
+</html>
